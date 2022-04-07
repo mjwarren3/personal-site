@@ -15,7 +15,12 @@ submitButton.addEventListener("click", submitMessage);
 
 // Functions
 function changeName() {
-    myName.innerText = "Mick Wooken"
+    if (myName.innerText === "Mike Warren") {
+        myName.innerText = "nerraW ekiM"
+    } else {
+        myName.innerText = "Mike Warren"
+    }
+    
 }
 
 function submitMessage(event) {

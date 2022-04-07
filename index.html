@@ -6,15 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mike Warren | Developer</title>
     <link rel="stylesheet" href="tailwind.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 120 120%22><text y=%22.9em%22 font-size=%2290%22>🏀</text></svg>">
+    <meta name="google-site-verification" content="uzztkCJQim7lDAA51DiWkIkfAllHtiUCTl8hqBKBqqU" />
   </head>
-  <body class="bg-gray-900 text-white font-poppins">
+  <body class="bg-gray-900 text-white font-poppins cursor-crosshair">
   
     <!--Header / Nav Bar-->
 
-    <header class="py-6">
+    <header class="py-6 cursor-crosshair">
       <div class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
-        <div class="text-white font-bold text-2xl my-name">Mike Warren</div>
+        <button class="text-white font-bold text-2xl my-name">Mike Warren</button>
         <div class="flex space-x-12 items-center">
           <a href="https://twitter.com/mikewarren0" target="_blank" rel="noopener noreferrer">
             <svg xmlns="http://www.w3.org/2000/svg" class="ionicon h-8 fill-white hover:fill-indigo-400" viewBox="0 0 512 512"><title>Logo Twitter</title><path d="M496 109.5a201.8 201.8 0 01-56.55 15.3 97.51 97.51 0 0043.33-53.6 197.74 197.74 0 01-62.56 23.5A99.14 99.14 0 00348.31 64c-54.42 0-98.46 43.4-98.46 96.9a93.21 93.21 0 002.54 22.1 280.7 280.7 0 01-203-101.3A95.69 95.69 0 0036 130.4c0 33.6 17.53 63.3 44 80.7A97.5 97.5 0 0135.22 199v1.2c0 47 34 86.1 79 95a100.76 100.76 0 01-25.94 3.4 94.38 94.38 0 01-18.51-1.8c12.51 38.5 48.92 66.5 92.05 67.3A199.59 199.59 0 0139.5 405.6a203 203 0 01-23.5-1.4A278.68 278.68 0 00166.74 448c181.36 0 280.44-147.7 280.44-275.8 0-4.2-.11-8.4-.31-12.5A198.48 198.48 0 00496 109.5z"/></svg>
@@ -33,19 +36,41 @@
     <div class="container mx-auto px-8 md:px-14 lg:px-24 w-full pb-16">
       <div class="container mt-16 flex justify-between items-center w-full">
         <div class="flex flex-wrap md:flex-nowrap">
-          <div class="inline-block typed-out text-xl font-bold">
+          <div class="inline-block typed-out text-xl lg:text-4xl font-bold">
             Hello world.
           </div>
           
         </div>
       </div>
-      <div class="container my-4 flex justify-between items-center w-full font-semibold text-5xl">
-        Welcome to my website.
+      <div class="container my-4 flex justify-between items-center w-full font-semibold text-5xl lg:text-8xl">
+        <div>Welcome to my personal site.</div>
+        <img src="/img/bball.svg" class="animate-bounce w-48 h-48 lg:w-1/2 lg:h-1/2 rounded-full"></img>
       </div>
-      
+
+      <!--Bio -->
+      <div class="container flex justify-between items-center w-full">
+        <hr class="border-indigo-700 border-2 w-6 mt-16">
+      </div>
+
+      <div class="container flex pt-1 w-full">
+        <div class="text-lg font-semibold">Bio.</div>
+      </div>
+
+      <p class="text-sm lg:text-base font-light">
+        My name is Mike, and although I would not classify myself as a developer, I enjoy coding in my spare time. I started my web development journey a few years ago while trying to build a search engine for the stock market (see Stocksight below). Since then, I have tried to learn as much as I can on the side of my job. I took a few Javascript courses with Angela Yu, and have worked on a few other side projects since.
+        <br>
+        <br>
+        You'll see a lot of 🏀 basketball  references around my websites - it is my favorite thing to do in my spare time (in addition to coding).
+        <br>
+        <br>
+        In my full-time job, I am a Strategy Manager at 💧 DigitalOcean. I also spent 5 years as a consultant / quasi-Data Scientist for a consulting firm called Simon-Kucher & Partners.
+        <br>
+        <br>
+        Continuing to learn and build out my skills in strategy, operations, data science, and web development. Hope you enjoy my site!
+      </p>
 
       <!--My Projects -->
-      <div class="container flex justify-between items-center pt-6 w-full">
+      <div class="container flex justify-between items-center pt-2 w-full">
         <hr class="border-indigo-700 border-2 w-6 mt-16">
       </div>
       
@@ -53,27 +78,37 @@
         <div class="text-lg font-semibold">My projects.</div>
       </div>
 
-      <div class="container flex flex-wrap sm:flex-nowrap gap-4 justify-between w-full mt-4">
+      <div class="container grid grid-cols-4 gap-4 justify-between w-full mt-4">
 
-        <a href="https://stocksense.io" target="_blank" rel="noopener noreferrer" class="w-full lg:w-1/3 border-2 border-gray-400 p-4 rounded-lg hover:bg-indigo-700">
-          <div class="flex-1">
-            <div class="font-semibold text-lg hover:animate-pulse">Stocksense</div>
-            <div class="text-xs lg:text-sm font-light">Stocksense is a search engine for the Stock Market. Use it to find publicly traded tickers for trends that you want to invest in, from renewables to food delivery.</div>
-            <div class="text-xs font-light mt-2 italic">Built using Python, React JS, and TailwindCSS</div>
+        <a href="https://stocksight.co" target="_blank" rel="noopener noreferrer" class="w-full col-span-4 sm:col-span-2 border-2 border-gray-400 p-4 rounded-lg hover:bg-black">
+          <div class="flex-1 ">
+            <img src="img/stocks.JPG" class="rounded-lg shadow-sm mb-4">
+            <div class="font-semibold text-lg hover:animate-pulse">stocksight</div>
+            <div class="text-xs lg:text-sm font-light">Stocksight is a search engine for the Stock Market. You can use it to find publicly traded companies that fit trends that you want to invest in, from electric cars to food delivery.</div>
+            <div class="text-xs font-light mt-2 italic">Built using MongoDB, Algolia, Node.js, Express.js, EJS, TailwindCSS and HTML</div>
           </div>
         </a>
 
-        <a href="https://practicai.com" target="_blank" rel="noopener noreferrer" class="w-full lg:w-1/3 border-2 border-gray-400 p-4 rounded-lg hover:bg-indigo-700">
-          <div class="font-semibold text-lg hover:animate-pulse">Practicai</div>
-          <div class="text-xs lg:text-sm  font-light">Practicai is a Wordpress website for a Data Science consulting firm. It has example projects of what I worked on at SKP.</div>
-          <div class="text-xs font-light mt-2 italic">Built using Wordpress</div>
+        <a href="hp.mikewarren.dev" target="_blank" rel="noopener noreferrer" class="w-full col-span-4 sm:col-span-2 border-2 border-gray-400 p-4 rounded-lg hover:bg-black">
+          <img src="img/sorting.JPG" class="rounded-lg shadow-sm mb-4">
+          <div class="font-semibold text-lg hover:animate-pulse">sorting hat</div>
+          <div class="text-xs lg:text-sm  font-light">Sorting Hat is an online quiz that sorts you into a Harry Potter house based on your answers. Are you a Ravenclaw, Hufflepuff, Gryffindor, or Slytherin?</div>
+          <div class="text-xs font-light mt-2 italic">Built using Javascript, TailwindCSS, and HTML</div>
         </a>
 
-        <div class="w-full lg:w-1/3 border-2 border-gray-400 p-4 rounded-lg hover:bg-black">
-          <div class="font-semibold text-lg hover:animate-pulse">Personal Site (You are here)</div>
-          <div class="text-xs lg:text-sm  font-light">This is my personal website, which is a simple static site built using TailwindCSS and HTML.</div>
+        <a href="https://mikeandmadison.com" target="_blank" rel="noopener noreferrer" class="w-full col-span-4 sm:col-span-2 border-2 border-gray-400 p-4 rounded-lg hover:bg-black">
+          <img src="img/bucketlist.JPG" class="rounded-lg shadow-sm mb-4">
+          <div class="font-semibold text-lg hover:animate-pulse">bucket list</div>
+          <div class="text-xs lg:text-sm  font-light">Bucket List is a website I made for my girlfriend and I to keep track of things that we want to do over the next year. Please don't make any changes to the Bucket List...</div>
+          <div class="text-xs font-light mt-2 italic">Built using MongoDB, Node.js, Express, and Javascript</div>
+        </a>
+
+        <a href="https://mikewarren.dev" target="_blank" rel="noopener noreferrer" class="w-full col-span-4 sm:col-span-2 border-2 border-gray-400 p-4 rounded-lg hover:bg-black">
+          <img src="img/personal.JPG" class="rounded-lg shadow-sm mb-4 border border-white ">
+          <div class="font-semibold text-lg hover:animate-pulse">personalsite</div>
+          <div class="text-xs lg:text-sm  font-light">This is my personal website that shows my projects and what I have been up to. It is a simple static site built using TailwindCSS and HTML.</div>
           <div class="text-xs font-light mt-2 italic">Built using HTML + TailwindCSS</div>
-        </div>
+        </a>
 
       </div>
 
@@ -137,7 +172,7 @@
         Let's get in touch!
       </div>
       <div class="text-sm font-light pt-1">
-        Feel free to email me @ mjwarren3@gmail.com or follow me on social media below.
+        Feel free to email me at mjwarren3@gmail.com or follow me on social media below.
       </div>
 
       <div class="container flex justify-between align-center mt-12">
